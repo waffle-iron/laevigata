@@ -32,6 +32,7 @@ RSpec.feature 'Display an ETD' do
       expect(page).to have_content etd.title.first
       expect(page).to have_content etd.creator.first
       expect(page).to have_content etd.keyword.first
+      expect(page).to have_content etd.department.first
     end
   end
 end
